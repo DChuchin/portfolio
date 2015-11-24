@@ -1,0 +1,49 @@
+/*.margin_3 {
+  border-radius: 50%;
+  background-color: rgb(190, 190, 190);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0.5px 0.866px 0px 0px rgba(198, 198, 198, 0.75);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 53px;
+  height: 54px;
+  z-index: 1;
+}
+*/
+body {
+	background-color: #b0c099;
+}
+.enter-form {
+	padding: 40px;
+	display: block;
+	margin: auto;
+	height: 200px;
+	width: 250px;
+	background-color: #fbfbfa;
+	border-radius: 5px;
+}
+.input{
+	display: block;
+	margin: auto;
+	margin-bottom: 24px;
+}
+button {
+	width: 152px;
+	height: 39px;
+	border-radius: 5px;
+}
+.footer {
+	vertical-align: middle;
+	margin: auto;
+	width: 100%;
+	min-height: 62px;
+	display: block;
+	position: absolute;
+	bottom:0;
+	background-color: #fbfbfa;
+}
+.wrapper {
+	width: 500px;
+	display: block;
+	margin: auto;
+}
