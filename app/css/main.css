@@ -1,0 +1,76 @@
+body {
+	color: #727070;
+	font: 14 px Open, sans;
+	background-color: #e4e8ad;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 958px;
+	margin: auto;
+}
+.main-header {
+	display: block;
+	min-height: 90px;
+	width: 100%;
+	background: #716f6f url('../img/bg-head.png') repeat;
+	border-bottom: 7px solid #ffffff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+nav.social {
+	font-size: 0;
+	float: right;
+	margin-top: 0;
+	padding: 0;
+	list-style: none;
+}
+nav.social li {
+	margin-right: 15px;
+	margin-top: 25px;
+	width: 42px;
+	height: 44px;
+	background-image: url("../img/spritesheet.png");
+	background-repeat:  no-repeat;
+	display:inline-block;
+}
+.fb {
+	 background-position: -5px -5px;
+}
+.vk {
+	background-position: -317px -5px;
+}
+.tw {
+	background-position: -213px -5px;
+}
+.gh {
+	background-position: -109px -5px;
+}
+.fb:hover {
+	 background-position: -57px -5px;
+}
+.vk:hover {
+	background-position: -369px -5px;
+}
+.tw:hover {
+	background-position: -265px -5px;
+}
+.gh:hover {
+	background-position: -161px -5px;
+}
+.main-logo {
+	font-size: 0;
+	margin-top: 10px;
+	float:left;
+}
+.sidebar {
+	float:left;
+}
+.info-block {
+	float: right;
+}
+.header-info {
+	color: #eeedec;
+	background-color: #727070;
+	min-height: 54px;
+	width: 650px;
+}
