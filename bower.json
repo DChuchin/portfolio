@@ -2,5 +2,8 @@
   "name": "portfolio",
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3"
+  },
+  "devDependencies": {
+    "modernizer": "~2.8.2"
   }
 }

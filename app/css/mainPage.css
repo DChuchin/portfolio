@@ -1,0 +1,130 @@
+.foto-frame {
+	/*float:left;*/
+
+	position: absolute;
+	top:40px;
+	left: 40px;
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	border: 10px solid #f6f5f4;
+	overflow:hidden;
+	box-shadow: 0 0 1px 1px #dfdedd;
+	
+	
+	/*margin: 40px;*/
+	
+}
+.foto-wrap {
+	display: inline-block;
+	vertical-align: middle;
+
+}	
+.foto {
+	position:absolute;
+	left: -10px;
+
+}
+.biography {
+	float:right;
+
+	
+}
+
+.bio-item {
+	margin-bottom: 6px;
+}
+.bio-item:last-child {
+	margin-top: 15px;
+}
+.bio-var {
+	display: inline-block;
+	font-weight: bold;
+}
+.bio-value {
+	display: inline-block;
+	max-width: 220px;
+}
+.key-skills-block {
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+}
+.key-skill {
+	display: inline-block;
+	position: relative;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	background-image: linear-gradient(to top,#e6e5e4,#f8f8f8);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top: 1px solid #d5d5d5;
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 0 10px 0 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 9px;
+	font-weight: bold;
+	color: #3b8578;
+	
+
+}
+.key-skill:before {
+	position: absolute;
+	left: -9px;
+	top:-1px;
+	content:  url('../img/button-back.png');
+	
+	
+	
+	
+
+}
+.key-skills-title {
+	display: inline-block;
+	vertical-align: top;
+}
+/*.wrapper:after{
+	
+    content:'';
+    display: block;
+    clear:both;
+}
+*/
+p {
+	margin: 0;
+}
+
+.icon {
+	float: left;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: #f7f7f7 url('../img/case.png') center no-repeat;
+	box-shadow: 
+			inset 1px 1px 0 0 #d1d1d1,
+			inset -1px -1px 0 0 #ffffff;
+
+}
+.exp-info{
+	
+	margin-left: 95px;
+	
+}
+.exp-item {
+	position: relative;
+	border-top: 2px solid #edeceb;
+	padding: 20px 0;
+}
+
+.exp-item:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+.exp-item:last-child {
+
+	padding-bottom:  0;
+}
+/*------------------------------------------sidebar-----------------------------------*/
