@@ -1,0 +1,34 @@
+.about-header.feedback{
+	font-weight: normal;
+}
+.name-field{
+	float:left;
+	display: block;
+}
+.email-field{
+	float:right;
+}
+.feedback-container {
+	width:405px;
+	margin: 0 auto;
+}
+input {
+		width: 190px;
+	border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

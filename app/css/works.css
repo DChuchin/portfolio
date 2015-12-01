@@ -6,6 +6,7 @@
 	border: 1px solid #c5c5c5;
 	margin-left: 30px;
 	margin-bottom: 30px;
+	vertical-align: top;
 }
 .my-works-item:nth-child(3n+1){
 	margin-left: 0;
@@ -45,4 +46,31 @@
 .about {
 	min-height: 840px;
 	background-color: #f2f2f2;
+}
+
+.add-button {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	background-image: linear-gradient(to top, #e9e7e6, #fafbfb);
+	text-align: center;
+	padding:25px 10px 20px 10px;
+}
+.add-button:before {
+	margin: 0 auto 10px;
+	content:'';
+	display: block;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #f7f7f7;
+	box-shadow:
+			inset 1px 1px 0 0 #cfcfcf,
+	 		inset -1px -1px 0 0 #ffffff;
+	background: url('../img/polaroid.png') 50% 50% no-repeat;
+}
+.add-button:hover {
+	background-color:#bfbdbd;
+	background-image: linear-gradient(to top, #bfbdbd, #e8e7e7);
 }
