@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Document</title>
+	<title>Dmitry CHuchin</title>
+	<link rel="icon" href="img/ico.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='fonts/stylesheet.css' rel='stylesheet' >
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 	
@@ -53,7 +54,7 @@
 							<a href="index.html" class="nav-link">Обо мне</a>
 						</li>
 						<li class="nav-item">
-							<a href="my-works.html" class="nav-link">Мои работы</a>
+							<a href="my-works.html" class="nav-link">Мои Работы</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link curent">Обратная связь</a>
@@ -86,15 +87,34 @@
 					<div class="about-info clearfix">
 						<div class="feedback-container">
 							<form action="">
-								<label class="name-field">
+							
+								<label class="name-block">
 									<div>Имя</div>
-									<input type="text" name="" placeholder="Как к Вам обращаться">
+									<input class="name-field" type="text" name="name" placeholder="Как к Вам обращаться" required>
 								</label>
-								<label class="email-field">
-									<div>Имя</div>
-									<input type="email" placeholder="Куда мне писать">
+								<label class="email-block">
+									<div>Email</div>
+									<input class="email-field" type="email" name="email" placeholder="Куда мне писать" required>
 								</label>
-								<textarea type="note" placeholder="Кратко в чем суть" rows="10"></textarea>
+							
+								
+								<label  class="textarea-block">
+									<div>Сообщение</div>
+									<textarea class="textarea-field" type="note" placeholder="Кратко в чем суть" rows="10" required></textarea>
+								</label>
+
+								<div>Введите код, указанный на картинке</div>
+								<div class="capcha">
+								</div>
+								<label>
+									<input class="capcha-input" type="text" name="capcha" placeholder="Ведите код" required>
+								</label>
+								<div class="buttons-container clearfix">
+									<input class="button submit" type="submit" value="Отправить">
+									<input class=" button reset" type="reset" value="Очистить">
+									
+								</div>
+
 							</form>
 						</div>
 					</div>
@@ -121,93 +141,4 @@
 
 
 
-
-<!-- 
-
-<div class="wrapper">
-	<header class="main-header">
-		<div class="header-container">
-			<figure class="main-logo">
-				<a href="http://loftschool.com">
-					<img src="img/logo.png" alt="логотип" width="97px" height="72px">
-				</a>
-				<div class="logo-text">
-					Loftschool. От мыслителя к создателю.
-				</div>
-			</figure>
-			<ul class="social">
-				<li class="social-item">
-					<a href="" class="social-links fb"><span class="social-text">facebook</span></a>
-				</li>
-				<li class="social-item">
-					<a href="https://vk.com/id11075138" class="social-links vk"><span class="social-text">vkontakte</span></a>
-				</li>
-				<li class="social-item">
-					<a href="" class="social-links tw"><span class="social-text">twitter</span></a>
-				</li>
-				<li class="social-item">
-					<a href="" class="social-links gh"><span class="social-text">github</span></a>
-				</li>		
-			</ul>
-		</div>
-	</header>
-	<div class="main-content">
-		<div class="main-container">
-			<aside class="sidebar">
-				<nav class="main-menu">
-					<ul class="nav-list">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link">Обо мне</a>
-						</li>
-						<li class="nav-item">
-							<a href="my-works.html" class="nav-link">Мои работы</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link curent">Обратная связь</a>
-						</li>
-					</ul>
-				</nav>
-				<adress class="menu-contacts">
-					<div class="contacts-title">
-						Контакты 
-					</div>
-					<ul class="contacts-list">
-						<li class="contacts-item">
-							<a href="#" class="contacts-link email">dime10cents@gmail.com</a>
-						</li>
-						<li class="contacts-item">
-							<a href="#" class="contacts-link phone">+79136468442</a>
-						</li>
-						<li class="contacts-item">
-							<a href="#" class="contacts-link skype">dim_choo</a>
-						</li>
-					</ul>
-				</adress>
-			</aside>
-		
-
-
-			<div class="content">			
-				<section class="about">				
-					<h2 class="about-header feedback">У Вас интересный прект? Напишите мне</h2>					
-					<div class="about-info clearfix">
-						<div class="feedback-container">
-							<form action="">
-								<label class="name-field">
-									<div>Имя</div>
-									<input type="text" name="" placeholder="Как к Вам обращаться">
-								</label>
-								<label class="email-field">
-									<div>Имя</div>
-									<input type="email" placeholder="Куда мне писать">
-								</label>
-								<textarea type="note" placeholder="Кратко в чем суть" rows="10"></textarea>
-							</form>
-						</div>
-					</div>
-				</section>									
-			</div>
-		</div>
-	</div>
-</div> -->
 

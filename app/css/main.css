@@ -1,16 +1,11 @@
-@font-face {
-  font-family: 'Open Sans';
-  src:
-    local('Open Sans'),
-    url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,300italic,300') format('woff');
-}
+
 body {
 	background-image: url('../img/background.jpg');
-	background-size: cover;
+	background-size: 100%;
 	color: #727070;
 	font: 14px "Open Sans";
 	background-color: #e4e8ad;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sansregular';
 }
 figure {
 	padding: 0;
@@ -50,7 +45,7 @@ a {
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .header-container {
-	max-width: 1220px;
+	max-width: 1200px;
 	min-width: 960px;
 	margin: auto;
 	
@@ -118,89 +113,69 @@ a {
 /*-----------------------------------стили main------------------------------------*/
 
 .main-container {
-	width: 970px;
+	width:960px;
 	margin:0 auto;
-	border: 1px solid red;
+	
 }
 .main-container:after{
 	content: '';
-	display: table;
-	
+	display: table;	
 	clear: both;
 }
 .content {
-
-	
-	width: 660px;
+	width: 650px;
 	float: right;
-	
 }
 .about-header{ 
 	color: #eeedec;
 	background-color: #727070;
-	padding-left: 40px;
 	box-shadow: inset 0 1px 0 0 #c3c2c2;
 	background-image: linear-gradient(to top, #7b7979, #a9a7a7);	
 	text-shadow: 0 1px 1px #6f6e6e;
 	margin:0;
-	font-weight: bold;
-	padding: 15px 40px;
+	font-weight: normal;
+	padding: 13px 45px;
 	font-size: 24px;
+	font-family: 'open_sanssemibold';
 }
 .about {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	border-radius: 5px;
 	overflow: hidden;
 	border: 1px solid #c5c5c5;
+	background-color: #f6f5f5;
 }
 
 .about-info {
 	box-sizing:border-box;
 	position: relative;
-	
-	min-height: 105px;
-	background-color: #f6f5f5;
-	
-	padding: 35px 40px 25px 40px;
-	
-	
+	min-height: 105px;	
+	padding: 35px 40px 25px 40px;	
 	margin-top: -1px;
-	border-top: 1px solid #636363; 
-	
-
 }
-
-
-
-
 
 .wrapper {
 	min-height: 100%;
-
-
 }
 .wrapper:after{
 	content:"";
-	height: 90px;
+	height: 60px;
 	clear:both;
 	display: table;
-	
 }
+
+/*------------------сайдбар-------------------*/
 .sidebar {
 	width: 250px;
 	float:left;
-
-
 }
-.nav-list {}
-	
 
 .nav-link {
 	background-color: #e6e3e2;
-	font-weight: bold;
-	padding: 15px 25px;
+	padding: 14px 25px;
 	background-image: linear-gradient(to top, #e6e3e2, #f7f7f7);
-	border:1px solid #c5c5c5;
+	border-top:1px solid #c5c5c5;
+	border-bottom:1px solid #c5c5c5;
 	display: block;
 	margin-top: -1px;
 	text-shadow: 1px 1px 1px #f3f2f2;
@@ -214,7 +189,7 @@ a {
 .nav-link:active {
 	background-color: #7c7979;
 	color: #eeedec;
-	text-shadow: 1px 1px 1px #686767;
+	text-shadow: 0 1px 0 #686767;
 	background-image: linear-gradient(to top, #7c7979, #c3c2c2);
 	box-shadow: inset 0 1px 0 0 #c3c2c2;
 }
@@ -224,15 +199,15 @@ a {
 	background-image: linear-gradient(to top, #3fb79a, #7de8cd);
 	box-shadow: inset 0 1px 0 0 #a5efdd;
 	border: 1px solid #66dbbe;
-	text-shadow: 1px 1px 1px #f3f2f2;
-			
+	text-shadow: 1px 1px 1px #f3f2f2;			
 }
 
 .main-menu {
+	border: 1px solid #c5c5c5;
+	font-family:'Open_sanssemibold';
 	font-size: 20px;
 	border-radius: 5px;
 	margin-bottom: 35px;
-	box-shadow: 0 2px 5px 0 #c5c5c5;
 	overflow: hidden;
 }
 
@@ -246,12 +221,12 @@ a {
 	overflow: hidden;
 }
 .contacts-link{
-
+	font-family: 'open_sansregular';
+	font-size: 14px;
 	height: 38px;
 	box-sizing: border-box;
 	margin-top:-1px; 
 	text-align: center;
-	font-size: 14px;
 	padding-left: 55px;
 	border:1px solid #c5c5c5;
 	
@@ -262,46 +237,42 @@ a {
 }
 
 .contacts-title {
-	font-weight: bold;
+	font-family:'open_sanssemibold';
 	font-size: 20px;
 	background-color: #f4ce82;
 	background-image: linear-gradient(to top, #caa152, #f4ce82);
-	box-shadow: inset 0 1px 0 0 #f8dda7;
-	
+	box-shadow: inset 0 1px 0 0 #f8dda7;	
 	padding: 7px 25px;
 	border:1px solid #caa152;
 	color: #d0982c;
-
-
+	text-shadow: 0 1px 0 #efd6a4;
 }
 .contacts-link.email {
-	background-image: url('../img/email-копия.png');
+	background-image: url('../img/email.png');
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background: 
-				url('../img/)-копия-7.png') 45px no-repeat,
-				 url('../img/email-копия.png') 15px no-repeat;
+				url('../img/braket.png') 45px no-repeat,
+				 url('../img/email.png') 15px no-repeat;
 }
 
 .contacts-link.phone {
-	background-image: url('../img/telephone-копия.png');
+	background-image: url('../img/telephone.png');
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background: 
-				url('../img/)-копия-7.png') 45px no-repeat,
-				 url('../img/telephone-копия.png') 15px no-repeat;
+				url('../img/braket.png') 45px no-repeat,
+				 url('../img/telephone.png') 15px no-repeat;
 }
 
 .contacts-link.skype {
-	background-image: url('../img/skype-копия.png');
+	background-image: url('../img/skype.png');
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background: 
-				url('../img/)-копия-7.png') 45px no-repeat,
-			 	url('../img/skype-копия.png') 15px no-repeat;
+				url('../img/braket.png') 45px no-repeat,
+			 	url('../img/skype.png') 15px no-repeat;
 }
-
-
 
 .contacts-item {
 	background-color: #f4f3f2;
@@ -310,14 +281,14 @@ a {
 .contacts-item:hover {
 	background-color: #f2e7d0;
 	background-image: linear-gradient(to top, #f2e7d0, #ffffff);
+	text-decoration: underline;
 }
-
 
 /*---------------------------------стили футера---------------------------------------*/
 .main-footer {
 	margin-top: -60px;
 	min-width: 970px;
-	min-height: 60px;
+	height: 60px;
 	width:100%;
 	background-color: #ffffff;
 }
@@ -338,14 +309,15 @@ a {
 
 }
 .lock-inner {
+	font-family: 'open_sansbold';
 	font-size: 14px;
-	font-weight: bold;
 	color:#9c9c9c;
 	width: 19px;
     height: 22px;
 	background: url('../img/lockSprite.png')  -5px -5px no-repeat;
 	padding-left: 25px;
 	height: 24px;
+	
 }
 .lock-inner:hover {
 	text-decoration: underline;

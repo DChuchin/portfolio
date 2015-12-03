@@ -4,48 +4,46 @@
 	border-radius: 5px;
 	overflow: hidden;
 	border: 1px solid #c5c5c5;
-	margin-left: 30px;
-	margin-bottom: 30px;
+	
+	margin:0 15px 35px 15px;
 	vertical-align: top;
 }
-.my-works-item:nth-child(3n+1){
-	margin-left: 0;
-}
+
 .pre-view {
 	position: relative;
 	display: block;
 	width: 165px;
 	height: 120px;
-	background-image: url('../img/pic.jpg'); 
+	overflow: hidden;
+ 
 	
 
 }
-.pre-view:after {
+.pre-view:before {
 	content:'';
 	position:absolute;
 	width:100%;
 	height: 100%;
 	background-color:rgba(111,109,109,.5);
 }
-.pre-view:hover:after{
+.pre-view:hover:before{
 	display:none;
+
+
 }
 .work-name {
 	text-align: center;
-	font-size: 13.35px;
+	font-size: 13px;
 	font-weight: bold;
-	
-	padding:5px;
+	font-family: 'open_sanssemibold';
+	padding:7px;
 }
 .work-about {
 	background-color: #ffffff;
 	text-align: center;
-	padding:5px;
+	padding:7px;
+	font-family: 'open_sanslight';
 	font-size: 12px;
-}
-.about {
-	min-height: 840px;
-	background-color: #f2f2f2;
 }
 
 .add-button {
@@ -68,9 +66,18 @@
 	box-shadow:
 			inset 1px 1px 0 0 #cfcfcf,
 	 		inset -1px -1px 0 0 #ffffff;
-	background: url('../img/polaroid.png') 50% 50% no-repeat;
+	background: url('../img/about-ikon.png') -55px -47px no-repeat;
 }
 .add-button:hover {
 	background-color:#bfbdbd;
 	background-image: linear-gradient(to top, #bfbdbd, #e8e7e7);
+}
+.about {
+	min-height: 840px;
+}
+.about-info {
+	padding: 0;
+	margin: 40px auto;
+	width: 600px;
+
 }

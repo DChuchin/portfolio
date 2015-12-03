@@ -1,6 +1,4 @@
 .foto-frame {
-	/*float:left;*/
-
 	position: absolute;
 	top:40px;
 	left: 40px;
@@ -10,10 +8,6 @@
 	border: 10px solid #f6f5f4;
 	overflow:hidden;
 	box-shadow: 0 0 1px 1px #dfdedd;
-	
-	
-	/*margin: 40px;*/
-	
 }
 .foto-wrap {
 	display: inline-block;
@@ -23,12 +17,9 @@
 .foto {
 	position:absolute;
 	left: -10px;
-
 }
 .biography {
-	float:right;
-
-	
+	float:right;	
 }
 
 .bio-item {
@@ -68,50 +59,46 @@
 	font-size: 9px;
 	font-weight: bold;
 	color: #3b8578;
-	
-
 }
 .key-skill:before {
 	position: absolute;
 	left: -9px;
 	top:-1px;
 	content:  url('../img/button-back.png');
-	
-	
-	
-	
-
 }
 .key-skills-title {
 	display: inline-block;
 	vertical-align: top;
 }
-/*.wrapper:after{
-	
-    content:'';
-    display: block;
-    clear:both;
-}
-*/
-p {
-	margin: 0;
-}
 
-.icon {
-	float: left;
+.exp-item:before {
+	
+	display: inline-block;
+	content:'';
+	vertical-align: middle;
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
-	background: #f7f7f7 url('../img/case.png') center no-repeat;
+	background: #f7f7f7 url('../img/about-ikon.png') 3px 3px no-repeat;
 	box-shadow: 
 			inset 1px 1px 0 0 #d1d1d1,
 			inset -1px -1px 0 0 #ffffff;
-
+}
+.courses:before  {
+	background-position: -46px 4px;
+}
+.high-graduate:before {
+	background-position: 0 -47px;
+}
+.middle-graduate:before {
+	background-position: -105px 2px;
 }
 .exp-info{
-	
-	margin-left: 95px;
-	
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 40px;
+	max-width: 465px;
+		
 }
 .exp-item {
 	position: relative;
@@ -124,7 +111,11 @@ p {
 	border-top: none;
 }
 .exp-item:last-child {
-
+ 	margin-bottom: 5px;
 	padding-bottom:  0;
+}
+.exp-title {
+	font-weight: bold;
+	margin-bottom: 3px;
 }
 /*------------------------------------------sidebar-----------------------------------*/
