@@ -11,10 +11,12 @@ form {
 }
 
 .name-field, .email-field {
-	
+	font-family: 'open_sanslight';
+	font-size: 12px;
+	padding: 0 10px;
 	margin-top: 5px;
 	margin-bottom:10px;
-	width: 190px;
+	width: 170px;
 	height: 40px;
 	border-radius: 5px;
 }
@@ -27,18 +29,6 @@ form {
 	margin-left:13px; 
 }
 
-
-::-webkit-input-placeholder {
-	padding: 0 10px;
-	font-family: 'open_sanslight';
-	font-size: 12px;
-}
-::-moz-placeholder {
-	padding: 0 10px;
-	font-family: 'open_sanslight';
-	font-size: 12px;
-}
-
 .feedback-container {
 	width:409px;
 	margin: 0 auto;
@@ -49,10 +39,13 @@ form {
 
 
 .textarea-field {
-	margin-top: 5px;
+	font-family: 'open_sanslight';
+	font-size: 12px;
+	padding: 9px 10px;
+	margin-top: 9px;
 	margin-bottom: 10px;
-	width: 397px;
-	height: 179px;
+	width: 381px;
+	height: 162px;
 	border-radius:5px;
 
 }
@@ -71,8 +64,11 @@ form {
 
 }
 .capcha-input {
+	font-family: 'open_sanslight';
+	font-size: 12px;
+	padding: 0 10px;
 	border-radius: 5px;
-	width: 190px;
+	width: 170px;
 	height: 30px;
 	display: inline-block;
 	vertical-align: middle;
