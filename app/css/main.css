@@ -1,7 +1,7 @@
 
 body {
 	background-image: url('../img/background.jpg');
-	background-position: center;
+	background-position: cover;
 	background-attachment: fixed;
 	background-size: 100%;
 	color: #727070;
@@ -129,9 +129,12 @@ a {
 	float: right;
 }
 .about-header{ 
+	position: relative;
 	color: #eeedec;
 	background-color: #727070;
-	box-shadow: inset 0 1px 0 0 #c3c2c2;
+	box-shadow: 
+			inset 0 1px 0 0 #c3c2c2,
+			0 0 5px 0 #7b7979;
 	background-image: linear-gradient(to top, #7b7979, #a9a7a7);	
 	text-shadow: 0 1px 1px #6f6e6e;
 	margin:0;
@@ -139,13 +142,16 @@ a {
 	padding: 13px 45px;
 	font-size: 24px;
 	font-family: 'open_sanssemibold';
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 .about {
 	margin-bottom: 35px;
 	border-radius: 5px;
 	overflow: hidden;
-	border: 1px solid #c5c5c5;
+	
 	background-color: #f6f5f5;
+	box-shadow: 0 1px 2px 0 #7b7979;
 }
 
 .about-info {
@@ -180,7 +186,7 @@ a {
 	border-bottom:1px solid #c5c5c5;
 	display: block;
 	margin-top: -1px;
-	text-shadow: 1px 1px 1px #f3f2f2;
+	text-shadow: 0 1px 0 #f3f2f2;
 }
 
 .nav-link:hover{
@@ -191,7 +197,8 @@ a {
 .nav-link:active {
 	background-color: #7c7979;
 	color: #eeedec;
-	text-shadow: 0 1px 0 #686767;
+	text-shadow: 
+			0 1px 0 #686767;
 	background-image: linear-gradient(to top, #7c7979, #c3c2c2);
 	box-shadow: inset 0 1px 0 0 #c3c2c2;
 }
@@ -205,24 +212,24 @@ a {
 }
 
 .main-menu {
-	border: 1px solid #c5c5c5;
+	
 	font-family:'Open_sanssemibold';
 	font-size: 20px;
 	border-radius: 5px;
 	margin-bottom: 35px;
 	overflow: hidden;
+	box-shadow: 0 1px 5px 0 gray; 
 }
 
-.contacts-link{
-	display: block;
-	padding: 10px;
-}
 .menu-contacts {
 	display: block;
 	border-radius: 5px;
 	overflow: hidden;
+	
 }
 .contacts-link{
+	display: block;
+	padding: 10px;
 	font-family: 'open_sansregular';
 	font-size: 14px;
 	height: 38px;
@@ -231,6 +238,7 @@ a {
 	text-align: center;
 	padding-left: 55px;
 	border:1px solid #c5c5c5;
+
 	
 }
 .contacts-item:first-child .contacts-link {
@@ -238,24 +246,14 @@ a {
 	margin-top: 0;
 }
 
-.contacts-title {
-	font-family:'open_sanssemibold';
-	font-size: 20px;
-	background-color: #f4ce82;
-	background-image: linear-gradient(to top, #caa152, #f4ce82);
-	box-shadow: inset 0 1px 0 0 #f8dda7;	
-	padding: 7px 25px;
-	border:1px solid #caa152;
-	color: #d0982c;
-	text-shadow: 0 1px 0 #efd6a4;
-}
+
 .contacts-link.email {
 	background-image: url('../img/email.png');
 	background-position: 15px;
 	background-repeat: no-repeat;
 	background: 
 				url('../img/braket.png') 45px no-repeat,
-				 url('../img/email.png') 15px no-repeat;
+				 url('../img/email.png') 17px 13px no-repeat;
 }
 
 .contacts-link.phone {
@@ -264,7 +262,7 @@ a {
 	background-repeat: no-repeat;
 	background: 
 				url('../img/braket.png') 45px no-repeat,
-				 url('../img/telephone.png') 15px no-repeat;
+				 url('../img/telephone.png') 17px 9px no-repeat;
 }
 
 .contacts-link.skype {
@@ -273,7 +271,9 @@ a {
 	background-repeat: no-repeat;
 	background: 
 				url('../img/braket.png') 45px no-repeat,
-			 	url('../img/skype.png') 15px no-repeat;
+			 	url('../img/skype.png') 16px 10px no-repeat;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .contacts-item {
@@ -286,7 +286,25 @@ a {
 	text-decoration: underline;
 }
 
-/*---------------------------------стили футера---------------------------------------*/
+.contacts-title {
+	position: relative;
+	font-family:'open_sanssemibold';
+	font-size: 20px;
+	background-color: #f4ce82;
+	background-image: linear-gradient(to top, #caa152, #f4ce82);
+	box-shadow: 
+			inset 0 1px 0 0 #f8dda7,
+			0 1px 5px 0 gray;	
+	padding: 7px 25px;
+	border:1px solid #caa152;
+	color: #d0982c;
+	text-shadow: 
+			0 1px 0 #efd6a4,
+			0 -1px 0 #727070;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
 .main-footer {
 	margin-top: -60px;
 	min-width: 970px;
