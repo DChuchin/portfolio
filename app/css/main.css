@@ -1,6 +1,8 @@
 
 body {
 	background-image: url('../img/background.jpg');
+	background-position: center;
+	background-attachment: fixed;
 	background-size: 100%;
 	color: #727070;
 	font: 14px "Open Sans";
