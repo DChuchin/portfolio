@@ -7,7 +7,7 @@
 	border-radius: 50%;
 	border: 10px solid #f6f5f4;
 	overflow:hidden;
-	box-shadow: 0 0 3px 0 gray;
+	box-shadow: 0 0 3px 0 #c3c2c2;
 }
 .foto-wrap {
 	display: inline-block;
@@ -15,7 +15,7 @@
 
 }	
 .foto {
-	height: 140px;
+	width: 145px;
 
 }
 .biography {

@@ -11,6 +11,8 @@ form {
 }
 
 .name-field, .email-field {
+	background-image: linear-gradient(to top, #e4e3e1, #f9f9fa);
+	border: 1px solid #c3c2c2;
 	font-family: 'open_sanslight';
 	font-size: 12px;
 	padding: 0 10px;
@@ -39,6 +41,8 @@ form {
 
 
 .textarea-field {
+	background-image: linear-gradient(to top, #e4e3e1, #f9f9fa);
+	border: 1px solid #c3c2c2;
 	font-family: 'open_sanslight';
 	font-size: 12px;
 	padding: 9px 10px;
@@ -56,7 +60,7 @@ form {
 	display: inline-block;
 	width: 190px;
 	height: 78px;
-	border: 1px solid gray;
+	border: 1px solid #c3c2c2;
 	vertical-align: middle;
 	border-radius: 5px;
 	background: url('../img/captcha.jpg') center;
@@ -64,6 +68,8 @@ form {
 
 }
 .capcha-input {
+	background-image: linear-gradient(to top, #e4e3e1, #f9f9fa);
+	border: 1px solid #c3c2c2;
 	font-family: 'open_sanslight';
 	font-size: 12px;
 	padding: 0 10px;
@@ -78,6 +84,7 @@ form {
 	margin: 30px;
 }
 .button {
+	border: 1px solid #c3c2c2;
 	font-family: 'open_sanssemibold';
 	width: 125px;
 	height: 40px;
