@@ -9,7 +9,7 @@
 	<link href='fonts/stylesheet.css' rel='stylesheet' >
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
-
+	<script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
 	
 	
@@ -117,11 +117,36 @@
 				</section>									
 			</div>
 		</div>
+
 	</div>
+	<div class="popup-container">
+		<span class="popup-title">Добавление проекта</span>
+		<form class="popup-form"action="">
+			<input type="button" class="close-button b-close">
+		
+			<label class="project-name">
+				<div>Название проекта</div>
+				<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" required>
+			</label>
+			<label class="picture-upload-block">
+				<div>Картинка проекта</div>
+				<input class="picture-upload" type="text" name="email" placeholder="Загрузите изображение" required>
+				<input class="upload-button" type="file">
+			</label>
+		
+			
+			<label  class="popup-textarea-block">
+				<div>Описание</div>
+				<textarea class="popup-textarea" type="note" placeholder="Пара слов о вашем проекте" rows="10" required></textarea>
+			</label>			
+			<input class="button submit" type="submit" value="Добавить">
+				
+				
+	</form>
 </div>
-<div class="pop-up-cover">
-	<div class="pop-up-form"></div>
 </div>
+
+
 <footer class="main-footer">
 	<div class="container">
 		<div class="lock">
@@ -132,6 +157,7 @@
 	</div>
 </footer>
 
-	
+
+<script type="text/javascript" src="js/main.js"></script>	
 </body>
 </html>
