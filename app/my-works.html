@@ -119,10 +119,11 @@
 		</div>
 
 	</div>
+	<div class="popup-bg"></div>
 	<div class="popup-container">
 		<span class="popup-title">Добавление проекта</span>
-		<form class="popup-form"action="">
-			<input type="button" class="close-button b-close">
+		<form class="popup-form" action="">
+			<a class="close-button b-close "></a>
 		
 			<label class="project-name">
 				<div>Название проекта</div>
@@ -130,8 +131,9 @@
 			</label>
 			<label class="picture-upload-block">
 				<div>Картинка проекта</div>
-				<input class="picture-upload" type="text" name="email" placeholder="Загрузите изображение" required>
-				<input class="upload-button" type="file">
+				<div class="picture-upload"><div class="upload-button"></div></div>
+					<input class="upload-file" type="file">
+				
 			</label>
 		
 			
@@ -139,11 +141,12 @@
 				<div>Описание</div>
 				<textarea class="popup-textarea" type="note" placeholder="Пара слов о вашем проекте" rows="10" required></textarea>
 			</label>			
-			<input class="button submit" type="submit" value="Добавить">
+			<input class="button-submit" type="submit" value="Добавить">
 				
 				
-	</form>
-</div>
+		</form>
+		<div class="uploading-success">успешная загрузка</div>
+	</div>
 </div>
 
 
