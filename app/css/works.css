@@ -113,15 +113,15 @@ body {
 	position: fixed;
 	top:50%;
 	left:50%;
-	width: 350px;
+	width: 362px;
 	margin: -200px -175px;
 	z-index: 1000;
-	
-
 }
 .popup-title {
 	color: white;
-	padding-bottom: 10px;
+	font-family: "open_sanslight";
+	font-size: 12px;
+	padding: 10px 21px;
 }
 /*.pop-up-cover {
 	display: none;
@@ -136,17 +136,13 @@ body {
 	position:relative;
 	width:100%;
 	background-color: #e9e7e6;
-	padding: 20px;
+	padding: 18px 21px;
 	border-radius: 5px;
 	margin-top: 5px;
+	box-sizing:border-box;
 }
 
-.close-button {
-	position: absolute;
-	right:5px;
-	top:5px;
 
-}
 .popup-bg {
 	/*display: none;*/
 	position: fixed;
@@ -158,47 +154,60 @@ body {
 	z-index: 1000;
 }
 .close-button {
+	position: absolute;
+	right:6px;
+	top:6px;
 	cursor:pointer;
-	width: 10px;
-	height: 10px;
-	background-color: red;
+	width: 14px;
+	height: 14px;
+	background: url(../img/X.png);
 }
 .upload-file {
 	display: none;
 }
-.upload-button{
-	cursor: pointer;
-}
-.picture-upload, 
+
+.picture-upload-field, 
 .project-name-field,
-.popup-textarea  {
-	box-sizing:border-box;
+.popup-textarea-field,
+.project-url-field  {
+	margin: 10px 0 5px;
 	width: 100%;
-	height: 30px;
-	padding: 0 10px;
+	box-sizing:border-box;
+	height: 41px;
+	padding: 0 8px;
 	font-family: 'open_sanslight';
 	font-size: 12px;
 	background-image: linear-gradient(to top, #f4f4f4, #fbfcfd);
 	border: 1px solid #c3c2c2;
 	border-radius: 5px;
 	box-shadow: inset 0 2px 5px -2px #c3c2c2;
-	overflow: hidden;
-}
-.picture-upload {
-
 	
 }
-.upload-button{
-	margin-right: -10px;
-	cursor:pointer;
-	float:right;
-	height:100%;
-	width:40px;
-	background-color: blue;
+.picture-upload-field{
+	position: relative;
+	width: 84%;
+
 }
-.popup-textarea {
+.upload-button{
+	position: absolute;
+	top: -1px;
+	right: -52px;
+	
+	cursor:pointer;
+	height:39px;
+	width:52px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #c3c2c2;
+	background-image: url('../img/iCloud-down.png'),
+	            linear-gradient(to top, #e5e3e2, #fcfcfc);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.popup-textarea-field {
 	resize:none;
-	height: 100px;
+	padding: 9px;
+	height: 111px;
 	overflow: auto; 
 }
 .uploading-success {
