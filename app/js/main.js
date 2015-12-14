@@ -45,21 +45,27 @@ var myModule = (function () {
 
 	};
 
-	var flag = true;
+	
 
 
 	function _showText() {
 
 		var fullFileName = $(this).val();
 
+<<<<<<< HEAD
 		console.log(typeof(fullFileName));
 
+=======
+>>>>>>> cc29b170d0b3d5cf6eeba70d740ec650be200d56
 		var cutFileName;
 
 		var index = fullFileName.lastIndexOf('\\');
 
+<<<<<<< HEAD
 		console.log(index);
 
+=======
+>>>>>>> cc29b170d0b3d5cf6eeba70d740ec650be200d56
 		cutFileName = fullFileName.substr(index+1);
 
 		$('.picture-upload-field').html(cutFileName);
@@ -108,7 +114,7 @@ var myModule = (function () {
 
 	function _addProject (e) {
 		e.preventDefault();
-
+        var flag = true;
 		var form = $(this),
 
 			// url = 'add_project.php',
@@ -126,15 +132,14 @@ var myModule = (function () {
 					flag = false;
 					// _showTooltip(this);
 				} else {
-
 					$(this).removeClass('error');
-					flag = true;
+					flag = flag * true;
 	
 				}
 			});
 			console.log(flag);
 
-		if (flag) {
+		if (flag === 1) {
 			submitForm(form);
 		}
 
