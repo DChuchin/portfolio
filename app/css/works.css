@@ -222,6 +222,7 @@ body {
 .picture-upload-field{
 	position: relative;
 	width: 84%;
+	overflow: hidden;
 
 }
 .upload-button{

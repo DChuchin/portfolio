@@ -45,12 +45,20 @@ var myModule = (function () {
 
 	};
 
-	var flag = true;
+	
 
 
 	function _showText() {
 
-		$('.picture-upload-field').html($(this).val());
+		var fullFileName = $(this).val();
+
+		var cutFileName;
+
+		var index = fullFileName.lastIndexOf('\\');
+
+		cutFileName = fullFileName.substr(index+1);
+
+		$('.picture-upload-field').html(cutFileName);
 	}
 
 	function _hideError() {
@@ -96,7 +104,7 @@ var myModule = (function () {
 
 	function _addProject (e) {
 		e.preventDefault();
-
+        var flag = true;
 		var form = $(this),
 
 			// url = 'add_project.php',
@@ -114,17 +122,19 @@ var myModule = (function () {
 					flag = false;
 					// _showTooltip(this);
 				} else {
-
 					$(this).removeClass('error');
-					flag = true;
+					flag = flag * true;
 	
 				}
 			});
 			console.log(flag);
 
-		if (flag) {
+		if (flag === 1) {
 			submitForm(form);
 		}
+
+
+
 
 		// function _showTooltip (target) {
 		// 	var _showTooltip = 
