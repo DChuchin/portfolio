@@ -60,9 +60,8 @@ var myModule = (function () {
 
 		console.log(index);
 
-		cutFileName = fullFileName.substr(index+1);
 
-		$('.picture-upload-field').html(cutFileName);
+		$('.picture-upload-field').html($(this).val());
 	}
 
 	function _hideError() {

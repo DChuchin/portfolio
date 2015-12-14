@@ -135,12 +135,14 @@
 					<div class="tooltip tooltip-project-name">Введите имя</div>
 					<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" >
 				</label>
-				<label class="picture-upload-block">
+				<div class="picture-upload-block">
 					<div>Картинка проекта</div>
-					<div class="picture-upload-field"><div class="upload-button"></div></div>
-					<input class="upload-file"  id="upload-file" type="file">
-					
-				</label>
+					<label>
+						<input class="upload-file"  id="upload-file" type="file">
+						<div class="upload-button"></div>
+					</label>
+				</div>
+				<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled><!-- <div class="upload-button"></div> -->
 				<label class="project-url-block">
 					<div>URL проекта</div>
 					<div class="tooltip tooltip-project-name">Введите адрес</div>
@@ -171,6 +173,7 @@
 </footer>
 
 
-<script type="text/javascript" src="js/main.js"></script>	
+<script type="text/javascript" src="js/addPrjct.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>	
 </body>
 </html>
