@@ -25,13 +25,14 @@ var addProject = (function () {
 		var input = $(this),
 			name = _getNameFromPath(input.val());
 
-		$('.picture-upload-field').val(name).removeClass('error');
+		$('.picture-upload-field').val(name).removeClass('error')
+		$('.tooltip-picture-upload-field').hide(100);
 	},
 
 	_validate = function (e) {
 		e.preventDefault();
 		validation.validateForm(this);
-	}
+	},
 
 
 
@@ -39,23 +40,26 @@ var addProject = (function () {
 
 
 
-	function _showModal (e) {
+	_showModal = function (e)  {
 		
 		e.preventDefault();
 		$('.popup-container').show();
 		$('.popup-bg').show();
 
-	};
+	},
 
-	function _hideModal (e) {
+	_hideModal = function (e) {
+		_reset();
 		$('.popup-bg').hide();
 		$('.popup-container').hide();
 		
 
+	},
+
+
+	_reset = function() {
+
 	};
-
-
-
 
 	return {
 		init: init

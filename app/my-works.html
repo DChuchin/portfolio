@@ -131,7 +131,7 @@
 			
 				<label class="project-name-block">
 					<div>Название проекта</div>
-					<div class="tooltip tooltip-project-name">Введите имя</div>
+					<div class="tooltip tooltip-project-name-field">введите название</div>
 					<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" >
 				</label>
 				<div class="picture-upload-block">
@@ -141,16 +141,20 @@
 						<div class="upload-button"></div>
 					</label>
 				</div>
-				<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled><!-- <div class="upload-button"></div> -->
+				<div class="file-upload-wraper">
+					<div class="tooltip tooltip-picture-upload-field">изображение</div>
+					<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled></div>
+				<!-- <div class="upload-button"></div> -->
 				<label class="project-url-block">
 					<div>URL проекта</div>
-					<div class="tooltip tooltip-project-name">Введите адрес</div>
+					<div class="tooltip tooltip-project-url-field">ссылка на проект</div>
 					<input class="project-url-field" type="text" name="project-url" placeholder="Добавьте ссылку" >
 				</label>
 				
 				<label  class="popup-textarea-block">
 					<div>Описание</div>
-					<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" rows="10" ></textarea>
+					<div class="tooltip tooltip-popup-textarea-field">описание проекта</div>
+					<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" rows="10" title="toooooltip"></textarea>
 				</label>			
 				<input class="button-submit" type="submit" value="Добавить">
 					
@@ -172,10 +176,11 @@
 </footer>
 
 
-
+<script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower/qtip2/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="js/addPrjct.js"></script>
 <script type="text/javascript" src="js/validate.js"></script>	
-<script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
+
 <script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	
 
