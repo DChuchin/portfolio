@@ -90,28 +90,38 @@
 					<div class="about-info clearfix">
 						<div class="feedback-container">
 							<form id="feedback-form" action="">
-							
-								<label class="name-block">
-									<div>Имя</div>
-									<input class="name-field" type="text" name="name" placeholder="Как к Вам обращаться" >
-								</label>
-								<label class="email-block">
-									<div>Email</div>
-									<input class="email-field" type="email" name="email" placeholder="Куда мне писать" >
-								</label>
-							
-								
-								<label  class="textarea-block">
-									<div>Сообщение</div>
-									<textarea class="textarea-field" type="note" placeholder="Кратко в чем суть" rows="10" ></textarea>
-								</label>
-
-								<div>Введите код, указанный на картинке</div>
-								<div class="capcha">
+								<div class="name-block">
+									<label>
+										<div>Имя</div>
+										<div class="tooltip left tooltip-name-field"><span>введите имя</span></div>
+										<input class="name-field" type="text" name="name" placeholder="Как к Вам обращаться" >
+									</label>
 								</div>
-								<label>
-									<input class="capcha-input" type="text" name="capcha" placeholder="Введите код" >
-								</label>
+								<div class="email-block">
+									<label>
+										<div>Email</div>
+										<div class="tooltip right tooltip-email-field"><span>ваш email</span></div>
+										<input class="email-field" type="email" name="email" placeholder="Куда мне писать" >
+									</label>
+								</div>
+							
+								<div class="textarea-block">
+									<label>
+										<div>Сообщение</div>
+										<div class="tooltip left tooltip-textarea-field"><span>ваш вопрос</span></div>
+										<textarea class="textarea-field" type="note" placeholder="Кратко в чем суть" rows="10" ></textarea>
+									</label>
+								<div>
+								<div class="capcha-block">
+									<label>
+										<div>Введите код, указанный на картинке</div>
+										<div class="capcha">
+										</div>
+									
+										<div class="tooltip right tooltip-capcha-input"><span>код капчи</span></div>
+										<input class="capcha-input" type="text" name="capcha" placeholder="Введите код" >
+									</label>
+								</div>
 								<div class="buttons-container clearfix">
 									<input class="button submit" type="submit" value="Отправить">
 									<input class="button reset" type="reset" value="Очистить">

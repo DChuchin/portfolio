@@ -26,6 +26,7 @@ form {
 	
 }
 .email-block, .name-block {
+	position: relative;
 	margin-top: 5px;
 	display: inline-block;
 	
@@ -59,7 +60,11 @@ form {
 
 }
 .textarea-block {
+	position: relative;
 	margin-bottom: 15px;
+}
+.capcha-block{
+	position: relative;
 }
 .capcha {
 	display: inline-block;
@@ -139,9 +144,27 @@ form {
 	color: #eeedec;
 	text-shadow: 0 1px 0 #666565 ;
 }
+.tooltip-name-field{
+    top: 32px;
+    left: -96px;
+}
 
 
-
+.tooltip-email-field{
+    top: 32px;
+    right: -81px;
+	
+}
+.tooltip-textarea-field{
+	top: 96px;
+    left: -92px;
+	
+}
+.tooltip-capcha-input{
+    top: 48px;
+    right: -75px;;
+	
+}
 
 
 

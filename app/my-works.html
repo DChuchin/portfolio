@@ -124,16 +124,17 @@
 			<form class="popup-form" action="add_project.php" method="post">
 				<a class="close-button b-close "></a>
 				<div class="uploading-error">
-				<p class="uploading-error-title">Ошибка!</p>
-				<p class="uploading-error-text">Невозможно добавить проект.</p>
+					<p class="uploading-error-title">Ошибка!</p>
+					<p class="uploading-error-text">Невозможно добавить проект.</p>
 				<div class="error-close-button">x</div>
 				</div>
-			
-				<label class="project-name-block">
-					<div>Название проекта</div>
-					<div class="tooltip tooltip-project-name-field">введите название</div>
-					<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" >
-				</label>
+				<div class="project-name-block">
+					<label>
+						<div>Название проекта</div>
+						<div class="tooltip left tooltip-project-name-field"><span>введите название</span></div>
+						<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" >
+					</label>
+				</div>
 				<div class="picture-upload-block">
 					<div>Картинка проекта</div>
 					<label>
@@ -142,25 +143,24 @@
 					</label>
 				</div>
 				<div class="file-upload-wraper">
-					<div class="tooltip tooltip-picture-upload-field">изображение</div>
+					<div class="tooltip left tooltip-picture-upload-field"><span>изображение</span></div>
 					<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled></div>
-				<!-- <div class="upload-button"></div> -->
-				<label class="project-url-block">
-					<div>URL проекта</div>
-					<div class="tooltip tooltip-project-url-field">ссылка на проект</div>
-					<input class="project-url-field" type="text" name="project-url" placeholder="Добавьте ссылку" >
-				</label>
-				
-				<label  class="popup-textarea-block">
-					<div>Описание</div>
-					<div class="tooltip tooltip-popup-textarea-field">описание проекта</div>
-					<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" rows="10" title="toooooltip"></textarea>
-				</label>			
-				<input class="button-submit" type="submit" value="Добавить">
-					
-					
+				<div class="project-url-block">
+					<label>
+						<div>URL проекта</div>
+						<div class="tooltip left tooltip-project-url-field"><span>ссылка на проект</span></div>
+						<input class="project-url-field" type="text" name="project-url" placeholder="Добавьте ссылку" >
+					</label>
+				</div>
+				<div class="popup-textarea-block" >
+					<label>
+						<div>Описание</div>
+						<div class="tooltip left tooltip-popup-textarea-field"><span>описание проекта</span></div>
+						<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" rows="10"></textarea>
+					</label>
+				</div>			
+				<input class="button-submit" type="submit" value="Добавить">					
 			</form>
-			<div class="uploading-success">успешная загрузка</div>
 		</div>
 </div>
 
@@ -177,7 +177,6 @@
 
 
 <script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="bower/qtip2/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="js/addPrjct.js"></script>
 <script type="text/javascript" src="js/validate.js"></script>	
 
