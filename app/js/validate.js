@@ -86,6 +86,7 @@ var validation = (function () {
 		$('.close-button').click(_clearForm);
 		$('.popup-bg').click(_clearForm);
 		$('.submit-success-close').click(_clearForm);
+
 	};
 
 	function _removeError () {
@@ -108,7 +109,7 @@ var validation = (function () {
 			}
 		);
 		
-
+		$('.uploading-error').hide();
 
 	};
 
