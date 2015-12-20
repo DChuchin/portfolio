@@ -12,15 +12,15 @@
 
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
 	
-	
+	<base target="_blank">
 </head>
 <body>
 <div class="wrapper">
 	<header class="main-header">
-		<div class="header-container">
+		<div class="header-container clearfix">
 			<figure class="main-logo">
 				<a href="http://loftschool.com">
-					<img src="img/logo.png" alt="логотип" width="97px" height="72px">
+					<img src="img/logo.png" alt="логотип" width="97" height="72">
 				</a>
 				<div class="logo-text">
 					Loftschool. От мыслителя к создателю.
@@ -48,17 +48,17 @@
 				<nav class="main-menu">
 					<ul class="nav-list">
 						<li class="nav-item">
-							<a href="#" class="nav-link curent">Обо мне</a>
+							<a href="#" class="nav-link curent" target="_self">Обо мне</a>
 						</li>
 						<li class="nav-item">
-							<a href="my-works.html" class="nav-link">Мои Работы</a>
+							<a href="my-works.html" class="nav-link" target="_self">Мои Работы</a>
 						</li>
 						<li class="nav-item">
-							<a href="feedback.html" class="nav-link">Обратная связь</a>
+							<a href="feedback.html" class="nav-link" target="_self">Обратная связь</a>
 						</li>
 					</ul>
 				</nav>
-				<adress class="menu-contacts">
+				<div class="menu-contacts">
 					<div class="contacts-title">
 						Контакты 
 					</div>
@@ -73,7 +73,7 @@
 							<a href="skype:dim_choo?call" class="contacts-link skype">dim_choo</a>
 						</li>
 					</ul>
-				</adress>
+				</div>
 			</aside>
 		
 
@@ -198,14 +198,14 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="lock">
-			<a href="#" class="lock-inner">вход</a></div>
+			<a href="enterForm.html" class="lock-inner" target="_self">вход</a></div>
 		<div class="copyright">
 			©2015. Это мой сайт,пожалуйста, не копируйте и не воруйте его!
 		</div>
 	</div>
 </footer>
 
-<script type="text/javascript" src="bower/jquery/src/jquery.js"></script>
-<script type="text/javascript" src="js/main.js"></script>	
+<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+
 </body>
 </html>

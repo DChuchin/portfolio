@@ -5,13 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Dmitry CHuchin</title>
 	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<link href='fonts/stylesheet.css' rel='stylesheet' >
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
+	
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+
 	
-	
+	<base target="_blank">
 </head>
 <body>
 <div class="wrapper">
@@ -19,7 +23,7 @@
 			<div class="header-container">
 				<figure class="main-logo">
 					<a href="http://loftschool.com">
-						<img src="img/logo.png" alt="логотип" width="97px" height="72px">
+						<img src="img/logo.png" alt="логотип" width="97" height="72">
 					</a>
 					<div class="logo-text">
 						Loftschool. От мыслителя к создателю.
@@ -47,13 +51,13 @@
 				<nav class="main-menu">
 					<ul class="nav-list">
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">Обо мне</a>
+							<a href="index.html" class="nav-link" target="_self">Обо мне</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link curent">Мои Работы</a>
+							<a href="#" class="nav-link curent" target="_self">Мои Работы</a>
 						</li>
 						<li class="nav-item">
-							<a href="feedback.html" class="nav-link">Обратная связь</a>
+							<a href="feedback.html" class="nav-link" target="_self">Обратная связь</a>
 						</li>
 					</ul>
 				</nav>
@@ -131,36 +135,44 @@
 				<div class="project-name-block">
 					<label>
 						<div>Название проекта</div>
-						<div class="tooltip left tooltip-project-name-field"><span>введите название</span></div>
-						<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" >
+						
+						<input class="project-name-field" type="text" name="project-name" placeholder="Введите название" tooltip-content="введите название" tooltip-pos="left">
 					</label>
 				</div>
 				<div class="picture-upload-block">
-					<div>Картинка проекта</div>
 					<label>
+						<div>Картинка проекта</div>					
 						<input class="upload-file"  id="upload-file" type="file">
-						<div class="upload-button"></div>
+						<div class="upload-button"></div>			
+						<div class="file-upload-wraper">
+						
+							<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled tooltip-content="изображение" tooltip-pos="left">
+						</div>
 					</label>
 				</div>
-				<div class="file-upload-wraper">
-					<div class="tooltip left tooltip-picture-upload-field"><span>изображение</span></div>
-					<input class="picture-upload-field" type="text" placeholder="Загрузите изображение" disabled></div>
 				<div class="project-url-block">
 					<label>
 						<div>URL проекта</div>
-						<div class="tooltip left tooltip-project-url-field"><span>ссылка на проект</span></div>
-						<input class="project-url-field" type="text" name="project-url" placeholder="Добавьте ссылку" >
+		
+						<input class="project-url-field" type="text" name="project-url" placeholder="Добавьте ссылку" tooltip-content="ссылка на проект" tooltip-pos="left" >
 					</label>
 				</div>
 				<div class="popup-textarea-block" >
 					<label>
 						<div>Описание</div>
-						<div class="tooltip left tooltip-popup-textarea-field"><span>описание проекта</span></div>
-						<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" rows="10"></textarea>
+					
+						<textarea class="popup-textarea-field" type="note" placeholder="Пара слов о вашем проекте" tooltip-content="описание проекта" tooltip-pos="left"></textarea>
 					</label>
 				</div>			
 				<input class="button-submit" type="submit" value="Добавить">					
 			</form>
+		</div>
+		<div class="submit-success">
+			<div class="submit-success-close">x</div>
+			<div class="submit-success-content">
+				<p class="submit-success-content-title">Ура!</p>
+				<p class="submit-success-content-main">Проект успешно добавлен</p>
+			</div>
 		</div>
 </div>
 
@@ -168,7 +180,7 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="lock">
-			<a href="#" class="lock-inner">вход</a></div>
+			<a href="enterForm.html" class="lock-inner" target="_self">вход</a></div>
 		<div class="copyright">
 			©2015. Это мой сайт,пожалуйста, не копируйте и не воруйте его!
 		</div>
@@ -177,10 +189,12 @@
 
 
 <script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
 <script type="text/javascript" src="js/addPrjct.js"></script>
 <script type="text/javascript" src="js/validate.js"></script>	
 
-<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+
 	
 
 </body>

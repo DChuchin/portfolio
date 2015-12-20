@@ -129,7 +129,7 @@ a {
 	float: right;
 }
 .about-header{ 
-	position: relative;
+	
 	color: #eeedec;
 	background-color: #727070;
 	box-shadow: 
@@ -277,7 +277,8 @@ a {
 
 .contacts-item {
 	background-color: #f4f3f2;
-	background-image: linear-gradient(to top, #f4f3f2, #ffffff) ;		
+	background-image: linear-gradient(to top, #f4f3f2, #ffffff) ;
+	overflow: hidden;		
 }
 .contacts-item:hover {
 	background-color: #f2e7d0;

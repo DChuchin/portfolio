@@ -1,63 +1,113 @@
 
 $(document).ready(function() {
-	jQuery('input[placeholder], textarea[placeholder]').placeholder();
-});
+	$('input[placeholder], textarea[placeholder]').placeholder();
+	});
 
-
+//валидация формы
 var validation = (function () {
 
-	var init = function (){
+	function init (){
 
 		_setUpListeners();
-	},
+	};
 
-	validateForm = function (form) {
+	function validateForm (form) {
 
-		var elements = $(form).find('input, textarea').not('input[type="file"], input[type="submit"], input[type="reset"]'),
-			flag = true;
-		$.each(elements, function(index, val) {
-			var element = $(val),
-			val = element.val();
-
-		if (val.length === 0) {
+		var formElements = $(form).find('input, textarea').not('input[type="file"], input[type="submit"], input[type="reset"]'),
+			flag = true,
+			email = $(form).find('input[type="email"]');
+		
+		$.each(formElements, function(index, val) {
+			var formElement = $(val),
+				val = formElement.val(),
+				pos = formElement.attr('tooltip-pos');
 			
-			
-			$(this).prev('.tooltip').show();
-			 // $('.tooltip-'+className).show(300);
-			// $(this+'.tooltip').show();
-			element.addClass('error');
-			flag = false;
-		}
+
+			if (val.length === 0) {		
+				$(this).addClass('error');
+				
+					_createQtip(formElement, pos);
+						
+				flag = false;
+			}
 		});
+		return flag;
+	};
 
-	},
 
-	
-	_setUpListeners = function (){
+
+	//---------------------------создаем тултипы-----------------------------------------------------------------
+	function _createQtip (element, position) {
+
+		if (position === 'right') {
+			position = {
+				my: 'left center',
+				at: 'right center',
+				effect: false
+
+			}
+		} else {
+			position = {
+				my: 'right center',
+				at: 'left center',
+				effect: false
+
+			}
+		};
+
+		element.qtip({
+			content: {
+				text: function() {
+					return $(this).attr('tooltip-content');
+				}
+			},
+			show: {
+				event: 'show'
+			},
+			hide: {
+				event: 'keydown change hideTooltip'
+			},
+			position: position,
+			style : {
+				classes: 'tooltip',
+				tip: {
+					height: 4,
+					width: 8
+				}
+			}
+
+		}).trigger('show');
+	};
+
+	//прослушка событий
+	function _setUpListeners (){
 		$('form').on('keydown', '.error', _removeError);
 		$('form').on('reset', _clearForm);
 		$('.close-button').click(_clearForm);
 		$('.popup-bg').click(_clearForm);
-	},
+		$('.submit-success-close').click(_clearForm);
+	};
 
-	_removeError = function () {
-		console.log('Красная обводка у элементов форм удалена');
+	function _removeError () {
 		$(this).removeClass('error');
-		var className = $(this).attr('class');
-		$('.tooltip-'+className).hide();
-	},
+
+	};
 
 
-	_clearForm = function () {
-		var elements = $('form').find('input, textarea').not('input[type="file"], input[type="submit"], input[type="reset"]');
-		$.each(elements, function() {
-				$(this).removeClass('error').val('');
-				var className = $(this).attr('class');
-				$('.tooltip-'+className).hide();
+	function _clearForm () {
+		
+		var formElements = $('form')
+							.find('input, textarea')
+							.not('input[type="file"], input[type="submit"], input[type="reset"]');
 
+		$.each(formElements, function() {
+				$(this)
+					.removeClass('error')
+					.val('').trigger('hideTooltip');
+				
 			}
 		);
-		$(this).removeClass('error');
+		
 
 
 	};

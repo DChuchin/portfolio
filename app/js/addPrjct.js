@@ -1,66 +1,94 @@
-//добавление проекта модуль
+//модуль добавоения нового проекта
 
 var addProject = (function () {
 
-	var init = function () {
+	function init () {
 		_setUpListeners();
-	},
+	};
 
-	_getNameFromPath = function (path) {
-		return path.replace(/\\/g, '/').replace(/.*\//, '');
-	},
-
-	_setUpListeners = function () {
-		$('#add-project').click(_showModal);
+	 
+  	//прослушка событий
+	function _setUpListeners () {
+		$('#add-project')
+			.click(_showModal);
 		$('.close-button').click(_hideModal);
 		$('.popup-bg').click(_hideModal);
-		$('form').on('submit', _validate);
 		// $('.error-close-button').click(_hideError);
+		$('.submit-success-close').click(_hideModal);
 		$('#upload-file').on('change', _showFileName);
-
-	},
-
-
-	_showFileName = function () {
-		var input = $(this),
-			name = _getNameFromPath(input.val());
-
-		$('.picture-upload-field').val(name).removeClass('error')
-		$('.tooltip-picture-upload-field').hide(100);
-	},
-
-	_validate = function (e) {
-		e.preventDefault();
-		validation.validateForm(this);
-	},
-
-
-
-
-
-
-
-	_showModal = function (e)  {
-		
-		e.preventDefault();
-		$('.popup-container').show();
-		$('.popup-bg').show();
-
-	},
-
-	_hideModal = function (e) {
-		_reset();
-		$('.popup-bg').hide();
-		$('.popup-container').hide();
-		
-
-	},
-
-
-	_reset = function() {
+		$('form').on('submit', _addProject);
 
 	};
 
+	//показываем имя файла в фейковом инпуте
+	function _showFileName () {
+		var input = $(this),
+			name = _getNameFromPath(input.val());
+
+		$('.picture-upload-field').val(name).removeClass('error').trigger('hideTooltip')
+		$('.tooltip-picture-upload-field').fadeOut(200);
+	};
+	
+	function _getNameFromPath (path) {
+		return path.replace(/\\/g, '/').replace(/.*\//, '')
+	};
+
+
+
+	function submitForm (form) {
+		
+		var url = form.attr("action");
+
+		var data = form.serialize();
+
+		$.ajax ({
+			url: url,
+			type:'POST',
+			dataType: 'json',
+			data: data,
+		}).done( function(data){
+			$('.popup-container').hide();
+			$('.submit-success').show();
+			
+		}
+
+		).fail( function(){
+			$('.uploading-error').show();
+			
+		});
+
+		
+	};
+
+	function _addProject (e) {
+		e.preventDefault();
+		var form = $(this);
+		validation.validateForm(form);
+
+		if (validation.validateForm(form)) {
+			submitForm(form);
+		}
+	};
+
+
+	function _showModal (e)  {
+		
+		e.preventDefault();
+		$('.popup-container').fadeIn(200);
+		$('.popup-bg').fadeIn(200);
+		$('input[placeholder], textarea[placeholder]').placeholder();
+	};
+
+	 function _hideModal (e) {
+		
+		$('.popup-bg').fadeOut(200);
+		$('.popup-container').fadeOut(200);
+		$('.submit-success').fadeOut(200);
+	};
+
+
+
+	
 	return {
 		init: init
 	}

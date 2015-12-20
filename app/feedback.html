@@ -7,6 +7,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<link href='fonts/stylesheet.css' rel='stylesheet' >
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 
@@ -15,7 +16,7 @@
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
 
 	
-	
+	<base target="_blank">
 </head>
 <body>
 
@@ -26,7 +27,7 @@
 		<div class="header-container">
 			<figure class="main-logo">
 				<a href="http://loftschool.com">
-					<img src="img/logo.png" alt="логотип" width="97px" height="72px">
+					<img src="img/logo.png" alt="логотип" width="97" height="72">
 				</a>
 				<div class="logo-text">
 					Loftschool. От мыслителя к создателю.
@@ -54,13 +55,13 @@
 				<nav class="main-menu">
 					<ul class="nav-list">
 						<li class="nav-item">
-							<a href="index.html" class="nav-link">Обо мне</a>
+							<a href="index.html" class="nav-link" target="_self">Обо мне</a>
 						</li>
 						<li class="nav-item">
-							<a href="my-works.html" class="nav-link">Мои Работы</a>
+							<a href="my-works.html" class="nav-link" target="_self">Мои Работы</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link curent">Обратная связь</a>
+							<a href="#" class="nav-link curent" target="_self">Обратная связь</a>
 						</li>
 					</ul>
 				</nav>
@@ -93,23 +94,23 @@
 								<div class="name-block">
 									<label>
 										<div>Имя</div>
-										<div class="tooltip left tooltip-name-field"><span>введите имя</span></div>
-										<input class="name-field" type="text" name="name" placeholder="Как к Вам обращаться" >
+										<!-- <div class="tooltip left tooltip-name-field"><span>введите имя</span></div> -->
+										<input class="name-field" type="text" name="name" placeholder="Как к Вам обращаться" tooltip-content="введите имя" tooltip-pos="left">
 									</label>
 								</div>
 								<div class="email-block">
 									<label>
 										<div>Email</div>
-										<div class="tooltip right tooltip-email-field"><span>ваш email</span></div>
-										<input class="email-field" type="email" name="email" placeholder="Куда мне писать" >
+										<!-- <div class="tooltip right tooltip-email-field"><span>ваш email</span></div> -->
+										<input class="email-field" type="text" name="email" placeholder="Куда мне писать" tooltip-content="ваш email" tooltip-pos="right">
 									</label>
 								</div>
 							
 								<div class="textarea-block">
 									<label>
 										<div>Сообщение</div>
-										<div class="tooltip left tooltip-textarea-field"><span>ваш вопрос</span></div>
-										<textarea class="textarea-field" type="note" placeholder="Кратко в чем суть" rows="10" ></textarea>
+										<!-- <div class="tooltip left tooltip-textarea-field"><span>ваш вопрос</span></div> -->
+										<textarea class="textarea-field" type="note" placeholder="Кратко в чем суть" tooltip-content="ваш вопрос" tooltip-pos="left" ></textarea>
 									</label>
 								<div>
 								<div class="capcha-block">
@@ -118,8 +119,8 @@
 										<div class="capcha">
 										</div>
 									
-										<div class="tooltip right tooltip-capcha-input"><span>код капчи</span></div>
-										<input class="capcha-input" type="text" name="capcha" placeholder="Введите код" >
+										<!-- <div class="tooltip right tooltip-capcha-input"><span>код капчи</span></div> -->
+										<input class="capcha-input" type="text" name="capcha" placeholder="Введите код" tooltip-content="код капчи" tooltip-pos="right">
 									</label>
 								</div>
 								<div class="buttons-container clearfix">
@@ -140,7 +141,7 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="lock">
-			<a href="#" class="lock-inner">вход</a></div>
+			<a href="#" class="lock-inner" target="_self">вход</a></div>
 		<div class="copyright">
 			©2015. Это мой сайт,пожалуйста, не копируйте и не воруйте его!
 		</div>
@@ -148,13 +149,15 @@
 </footer>
 
 <script type="text/javascript" src="bower//jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="bower/qtip2/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="js/validate.js"></script>
 <script type="text/javascript" src="js/addPrjct.js"></script>	
 
 
 
 
-<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>	
+	
 
 </body>
 </html>
