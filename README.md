@@ -6,7 +6,7 @@ git clone https://github.com/DChuchin/portfolio.git
 ```
 + Перейдите в папку с прoектом
 ```
-cd new_folder
+cd portfolio
 ```
 + Установите bower
 ```
